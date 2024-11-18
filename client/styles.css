@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    background-color: #3a3a3a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.menu input, .menu button {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.menu input {
+    border: 1px solid #555;
+    background-color: #4a4a4a;
+    color: #e0e0e0;
+}
+
+.menu button {
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.menu button:hover {
+    background-color: #555;
+}
+
+.main-content {
+    width: 90vw;
+    max-width: 1200px;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3a3a3a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.child.left {
+    flex: 1;
+    height: 100%;
+}
+
+.bot-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: auto;
+    max-height: 75%;
+}
+
+.bot-list div {
+    padding: 8px;
+    font-size: 14px;
+    width: 80%;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.bot-list div:hover {
+    background-color: #3e4f71;
+}
+
+.bot-list .bot-unavailable {
+    background-color: #661111;
+    cursor: not-allowed;
+}
+
+.bot-list .selected {
+    background-color: #2e5a7e;
+}
+
+.bot-list .active-bot {
+    background-color: #6e4226;
+}
+
+.bot-list .inactive-bot {
+    background-color: #2e425a;
+}
+
+#selected-bot {
+    font-size: 16px;
+}
+
+#selected-bot-name {
+    color: #5fa9df;
+}
+
+.bot-time-left {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-top: 10px;
+    display: none;
+}
+
+.child.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.child textarea {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #4a4a4a;
+    color: #e0e0e0;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #555;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}

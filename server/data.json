@@ -1,0 +1,58 @@
+{
+    "123": {
+        "level": "Средний",
+        "duration_hours": 600,
+        "time_start": 1731419568,
+        "bots": [
+            [
+                true,
+                "import asyncio\n\nasync def main():\n    while True:\n        print(\"Test\")\n\nif __name__ == \"__main__\":\n    asyncio.run(main())\n",
+                430559
+            ],
+            [
+                false,
+                "print(\"Test\")"
+            ],
+            [
+                false,
+                "print(\"Testt\")"
+            ],
+            [
+                false,
+                "code4"
+            ],
+            [
+                false,
+                "code5asdasdasdaaa"
+            ]
+        ]
+    },
+    "321": {
+        "level": "Максимальный",
+        "duration_hours": 600,
+        "time_start": 1731419568,
+        "bots": [
+            [
+                false,
+                "code1"
+            ],
+            [
+                true,
+                "print(\"Test\")",
+                320520
+            ],
+            [
+                false,
+                "code3"
+            ],
+            [
+                false,
+                "code4"
+            ],
+            [
+                false,
+                "code5"
+            ]
+        ]
+    }
+}

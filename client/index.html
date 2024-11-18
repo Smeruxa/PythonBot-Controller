@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Боты</title>
+    <link rel="icon" type="image/x-icon" href="icon/icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu" id="menu">
+        <input type="text" id="api-key" placeholder="Введите ключ API"/>
+        <button type="button" id="login-btn">Войти в систему</button>
+        <div id="login-error" class="error-message"></div>
+    </div>
+
+    <div class="main-content" id="main-content" style="display: none;">
+        <div class="child left">
+            <h3>Выбрать бота</h3>
+            <div id="subscription-info"></div>
+            <div class="bot-list" id="bot-list"></div>
+            <div id="selected-bot">Выбранный бот: <span id="selected-bot-name">Не выбран</span></div>
+            <div id="bot-time-left" class="bot-time-left"></div>
+        </div>
+        
+        <div class="child right">
+            <textarea id="bot-code" rows="10" placeholder="Введите код бота"></textarea>
+            <div class="button-container">
+                <button id="start-stop-button">Запустить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
